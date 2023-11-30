@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" href="圓形排版.css">
+</head>
+<body>
+  <div class="circle-text">
+    <p>這是圓形排123版示例</p>
+  </div>
+  <div class="circle-text">
+    <p>這是圓形排123版示例</p>
+  </div>
+  <div class="circle-text">
+    <p>這是圓形排123版555示例</p>
+  </div>
+
+  <div class="circle">
+    <label for="count">
+      輸入個數：
+      <input
+        id="count"
+        min="1"
+        type="number"
+        place="輸入個數"
+        v-model="count"
+      />
+    </label>
+
+    <label for="deg">
+      輸入起始角度：
+      <input
+        id="deg"
+        type="number"
+        step="30"
+        place="起始位置"
+        v-model="startDeg"
+      />
+    </label>
+
+    <div class="example-circle">
+      <div
+        v-for="i in count"
+        :key="i"
+        class="example-circle__item"
+        :style="getStyle(i - 1)"
+      >
+        {{ i }}
+      </div>
+    </div>
+  </div>
+<button type="button"></button>
+</body>
+</html>

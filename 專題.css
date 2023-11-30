@@ -1,0 +1,174 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-image: url(/芒草.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 20vw;
+  height: 280px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: 300px;
+}
+
+#carouselExampleCaptions {
+  max-width: 100vw;
+  /* 限制最大寬度 */
+  max-height: 300px;
+  /* 限制最大高度 */
+  overflow: hidden;
+  /* 隱藏任何溢出的內容 */
+}
+
+p {
+  font-family: "Noto Serif TC", serif;
+  color: black;
+  font-size: 18pt;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Noto Serif TC", serif;
+  color: black;
+  font-size: 14pt;
+  transition-property: font-size;
+  transition-duration: 200ms;
+}
+a:hover {
+  color: white;
+  font-size: 20pt;
+}
+
+.head {
+  position: relative;
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(215, 185, 142);
+}
+.head .fa-cart-arrow-down {
+  position: absolute;
+  font-size: 20pt;
+  top: 20px;
+  right: 115px;
+}
+.head .login {
+  position: absolute;
+  right: 3%;
+  margin-top: 10px;
+}
+.head .logo {
+  font-size: 45px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.head .logo:hover {
+  color: white;
+  font-size: 55px;
+}
+.head .head2 {
+  margin-top: 10px;
+}
+.head .menu a {
+  display: inline-block;
+  width: 80px;
+  margin-right: 100px;
+}
+
+.abc .carousel-caption h5 {
+  font-size: 35pt;
+}
+.abc p {
+  font-family: "Noto Serif TC", serif;
+  font-size: 30pt;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.main .main2 {
+  width: 85vw;
+  height: 100vh;
+}
+.main .main2 .wbig {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.main .main2 .wbig .bbig {
+  width: 26%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.main .main2 .wbig .bbig .rightS {
+  margin-top: 10px;
+  width: 80%;
+  height: 74%;
+  margin-left: 0 auto 60px;
+}
+.main .main2 .wbig .bbig .IamenText {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.main .main2 .wbig .bbig .IamenText .rightText {
+  height: 10%;
+  font-size: 23px;
+}
+.main .main2 .wbig .bbig .IamenText .much {
+  height: 10%;
+}
+.main .main2 .wbig .bbig .cover {
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.main .main2 .wbig .bbig .cover:hover {
+  transition: 0.5s;
+  background-color: rgba(223, 245, 245, 0.5);
+}
+.main .main2 .wbig .bbig .cover:active {
+  background-color: rgba(22, 1, 1, 0.2);
+}
+.main .left {
+  padding: 10px 0px 10px 0px;
+  width: 15vw;
+  height: 100vh;
+  display: inline-block;
+}
+.main .left a {
+  font-size: 26pt;
+  display: block;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  /* 設置連結之間的垂直間距 */
+  /* 隱藏連結下劃線 */
+  color: white;
+}
+.main .left a:hover {
+  color: white;
+  font-size: 30pt;
+}/*# sourceMappingURL=專題.css.map */

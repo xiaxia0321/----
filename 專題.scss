@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    // 透明度 0.6 的黑色半透明遮罩
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-image: url(/芒草.jpg);
+    // 設置背景混和模式為相乘模式
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    // background-size: cover;
+
+}
+
+img {
+    // 解決圖片太大的問題
+    background-size: contain;
+    // 背景有多的空間也不重複
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+
+    // margin: 10px;
+    width: 20vw;
+    height: 280px;
+}
+
+// 輪播圖片大小
+.carousel-item img {
+    max-width: 100%;
+    height: 300px;
+}
+
+#carouselExampleCaptions {
+    max-width: 100vw;
+    /* 限制最大寬度 */
+    max-height: 300px;
+    /* 限制最大高度 */
+    overflow: hidden;
+    /* 隱藏任何溢出的內容 */
+}
+
+p {
+    font-family: 'Noto Serif TC', serif;
+    color: black;
+    font-size: 18pt;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Noto Serif TC', serif;
+    color: black;
+    font-size: 14pt;
+    //變大的方式
+    transition-property: font-size;
+    // 變大的時間
+    transition-duration: 200ms;
+
+    &:hover {
+        // 碰到的顏色改變
+        color: white;
+        // 碰到的大小改變
+        font-size: 20pt;
+    }
+}
+
+.head {
+    position: relative;
+    .fa-cart-arrow-down{
+        position: absolute;
+        font-size: 20pt;
+        top: 20px;
+        right: 115px;
+
+    }
+
+    .login {
+        position: absolute;
+        right: 3%;
+        margin-top: 10px;
+    }
+
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(215, 185, 142);
+
+    .logo {
+        font-size: 45px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            // 碰到的顏色改變
+            color: white;
+            // 碰到的大小改變
+            font-size: 55px;
+        }
+    }
+
+    .head2 {
+        margin-top: 10px;
+
+    }
+
+    .menu {
+        // margin-top: px;
+    }
+
+    .menu a {
+        display: inline-block;
+        width: 80px;
+        margin-right: 100px;
+    }
+}
+
+.abc {
+    .carousel-caption h5 {
+        font-size: 35pt;
+    }
+
+    p {
+        font-family: 'Noto Serif TC', serif;
+        font-size: 30pt;
+    }
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    position: relative;
+
+    .main2 {
+        width: 85vw;
+        height: 100vh;
+
+        .wbig {
+            // margin: 10% auto;
+            width: 100%;
+            height: 45%;
+            // background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+
+            .bbig {
+                width: 26%;
+                height: 100%;
+                position: relative;
+                text-align: center;
+
+
+                .rightS {
+                    margin-top: 10px;
+                    // background-color: blueviolet;
+                    width: 80%;
+                    height: 74%;
+                    margin-left: 0 auto 60px;
+                }
+
+                .IamenText {
+                    width: 100%;
+                    color: white;
+                    text-align: center;
+
+                    // margin-top: 10px;
+                    .rightText {
+                        height: 10%;
+                        font-size: 23px;
+                    }
+
+                    .much {
+                        height: 10%;
+                    }
+                }
+
+                .cover {
+                    transition: 0.3s;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 10;
+
+                    &:hover {
+                        transition: 0.5s;
+                        background-color: rgba(223, 245, 245, 0.5);
+                    }
+
+                    &:active {
+                        background-color: rgba(22, 1, 1, 0.2);
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    // 側面目錄區
+    .left {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        padding: 10px 0px 10px 0px;
+        width: 15vw;
+        height: 100vh;
+        display: inline-block;
+        // border: 1px solid black;s
+        // background-color: rgb(255, 255, 251);
+
+
+        a {
+            font-size: 26pt;
+            display: block;
+            margin-left: 60px;
+            margin-bottom: 50px;
+            /* 設置連結之間的垂直間距 */
+            // text-decoration: none;
+            /* 隱藏連結下劃線 */
+            color: white;
+            &:hover {
+                // 碰到的顏色改變
+                color: white;
+                // 碰到的大小改變
+                font-size: 30pt;
+            }
+        }
+    }
+}
+// .botton{
+//     width: 100%;
+//     height: 20vh;
+//     background-color: aqua;
+// }

@@ -1,0 +1,28 @@
+// body {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+//   }
+  
+  .circle-text {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+    text-align: center;
+    font-size: 16px;
+    // transform: rotate(45deg);
+  }
+  button {
+    transition-property: background, border-radius, transform;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-out;
+    width: 200px;
+    height: 100px;
+  }
